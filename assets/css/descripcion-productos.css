@@ -1,0 +1,54 @@
+.contenedor_producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    gap: 0;
+    align-items: center;
+}
+
+.contenedor_producto_imagen {
+    width: 100%;
+    height: 20rem;
+    background-image: url(../assets/baby-yoda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor_producto_texto {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media screen and (min-width:764px) {
+    .contenedor_producto {
+        padding: 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .contenedor_producto_imagen {
+        width: 50%;
+        height: 12rem;
+    }
+
+    .contenedor_producto_texto {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:764px) {
+    .contenedor_producto {
+        padding-left: calc((100% - 1136px)/2);
+        padding-right: calc((100% - 1136px)/2);
+    }
+
+    .contenedor_producto_imagen {
+        height: 25rem;
+    }
+
+}

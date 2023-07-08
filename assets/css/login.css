@@ -1,0 +1,54 @@
+.login {
+    padding: 6rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 275px;
+}
+
+.login_form_label {
+    align-self: self-start;
+    margin-bottom: 0.5rem;
+    font-size: var(--p-mobile);
+}
+
+.login_form_input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    font-family: var(--Raleway);
+    font-size: var(--p-mobile);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+input.login_form_input:focus,
+.contacto_form_textarea:focus {
+    border-bottom: 2px solid var(--text-color);
+}
+
+@media screen and (min-width:764px) {
+    .login {
+        padding: 2.8rem 2.5rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .login {
+        padding: 1.75rem 2.5rem;
+    }
+}

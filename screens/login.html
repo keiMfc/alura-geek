@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------- Estilos del Proyecto -------------------->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/rodapie.css">
+    <!-------------------- Fuentes del Proyecto -------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Login - Alura Geek</title>
+</head>
+
+<body>
+    <!-------------------- Header -------------------->
+    <header class="header">
+        <a href="##">
+            <img src="assets/logo.svg" alt="Logo de Alura Geek" class="header_logo">
+        </a>
+        <!--Barra de busqueda-->
+        <div class="search">
+            <div class="search_box">
+                <input type="text" class="input-search" placeholder="¿Qué deseas buscar?">
+                <div class="icon-search">
+                    <img src="assets/icono-search.svg" alt="Lupa de busqueda">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------- Formulario de Inicio -------------------->
+    <section class="login">
+        <h3 class="login_titulo">Iniciar Sesión</h3>
+        <form id="login_form" class="login_form" name="login_form">
+            <label for="email" class="login_form_label">
+                Correo electrónico
+            </label>
+            <input class="login_form_input" id="email" type="email" name="email"
+                placeholder="Escriba su correo electrónico" />
+            <label for="contraseña" class="login_form_label">
+                Contraseña
+            </label>
+            <input class="login_form_input" id="contraseña" type="password" name="contaseña"
+                placeholder="Escriba su contraseña" />
+            <button type="submit" value="submit-login" class="login_form_button button-fill">Entrar
+            </button>
+        </form>
+    </section>
+
+    <!-------------------- Footer -------------------->
+    <section class="footer">
+        <div class="izquierda">
+            <img src="assets/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
+            <ul class="izquierda_list">
+                <li class="izquierda_list_links"><a href="##">Quienes somos</a></li>
+                <li class="izquierda_list_links"><a href="##">Política de privacidad</a></li>
+                <li class="izquierda_list_links"><a href=s"##">Programa de fidelidad</a></li>
+                <li class="izquierda_list_links"><a href="##">Nuestras tiendas</a></li>
+                <li class="izquierda_list_links"><a href="##">Quiero ser franquiciado</a></li>
+                <li class="izquierda_list_links"><a href="##">Anúncie aquí</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h3 class="contacto_titulo">Hable con nosotros</h3>
+            <form id="form" class="contacto_form" name="form">
+                <label for="nombre" class="contacto_form_label">
+                    Nombre
+                </label>
+                <input class="contacto_form_input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
+                    required maxlength="50" />
+                <label for="mensaje" class="contacto_form_label">
+                    Mensaje
+                </label>
+                <textarea class="contacto_form_textarea" rows="6" id="mensaje" name="mensaje"
+                    placeholder="Escribe un mensaje" required maxlength="300"></textarea>
+                <button type="submit" value="submit" class="contacto_form_button button-fill">Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-------------------- Rodapie -------------------->
+    <footer class="rodapie">
+        <p>© 2023, made with ❤ by Keilin Figueredo</p>
+    </footer>
+</body>
+
+</html>

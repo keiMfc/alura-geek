@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------- Estilos del Proyecto -------------------->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/add.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/rodapie.css">
+    <!-------------------- Fuentes del Proyecto -------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Agregar Producto - Alura Geek</title>
+</head>
+
+<body>
+    <!-------------------- Header -------------------->
+    <header class="header">
+        <a href="##">
+            <img src="assets/logo.svg" alt="Logo de Alura Geek" class="header_logo">
+        </a>
+        <!--Barra de busqueda-->
+        <div class="search">
+            <div class="search_box">
+                <input type="text" class="input-search" placeholder="¿Qué deseas buscar?">
+                <div class="icon-search">
+                    <img src="assets/icono-search.svg" alt="Lupa de busqueda">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------- Formulario de Ingreso de Producto -------------------->
+    <section class="add">
+        <h3 class="add_titulo">Agregar nuevo producto</h3>
+        <form id="add_form" class="add_form" name="add_form">
+
+            <label for="images" class="drop-container" id="dropcontainer">
+                <span class="drop-title"> <img src="assets/icono-img.svg" alt="Icono de imagen">
+                    Arraste para agregar una imagen para el producto</span>
+                o
+                <input class="submit-image" type="file" id="images" accept="image/*" required>
+            </label>
+
+            <label for="categoria" class="add_form_label">
+                Escoge la categoría
+            </label>
+            <input class="add_form_input" id="categoria" type="select" name="categoria"
+                placeholder="Selecciona una categoría" />
+
+            <label for="product-name" class="add_form_label">
+                Nombre del producto
+            </label>
+            <input class="add_form_input" id="product-name" type="text" name="product-name"
+                placeholder="Ingresa nombre del producto" />
+
+            <label for="product-price" class="add_form_label">
+                Nombre del producto
+            </label>
+            <input class="add_form_input" id="product-price" type="number" name="product-price"
+                placeholder="Ingresa precio del producto" />
+
+            <label for="descripcion" class="add_form_label">
+                Descripción del producto
+            </label>
+            <textarea class="add_form_textarea" rows="6" id="mensaje" name="mensaje" placeholder="Describe el producto"
+                required maxlength="300"></textarea>
+            <button type="submit" value="submit-add" class="add_form_button button-fill">Agregar Producto</button>
+        </form>
+    </section>
+
+    <!-------------------- Footer -------------------->
+    <section class="footer">
+        <div class="izquierda">
+            <img src="assets/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
+            <ul class="izquierda_list">
+                <li class="izquierda_list_links"><a href="##">Quienes somos</a></li>
+                <li class="izquierda_list_links"><a href="##">Política de privacidad</a></li>
+                <li class="izquierda_list_links"><a href=s"##">Programa de fidelidad</a></li>
+                <li class="izquierda_list_links"><a href="##">Nuestras tiendas</a></li>
+                <li class="izquierda_list_links"><a href="##">Quiero ser franquiciado</a></li>
+                <li class="izquierda_list_links"><a href="##">Anúncie aquí</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h3 class="contacto_titulo">Hable con nosotros</h3>
+            <form id="form" class="contacto_form" name="form">
+                <label for="nombre" class="contacto_form_label">
+                    Nombre
+                </label>
+                <input class="contacto_form_input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
+                    required maxlength="50" />
+                <label for="mensaje" class="contacto_form_label">
+                    Mensaje
+                </label>
+                <textarea class="contacto_form_textarea" rows="6" id="mensaje" name="mensaje"
+                    placeholder="Escribe un mensaje" required maxlength="300"></textarea>
+                <button type="submit" value="submit" class="contacto_form_button button-fill">Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-------------------- Rodapie -------------------->
+    <footer class="rodapie">
+        <p>© 2023, made with ❤ by Keilin Figueredo</p>
+    </footer>
+</body>
+
+</html>
