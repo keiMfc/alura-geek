@@ -1,0 +1,36 @@
+.banner {
+    background: url(../assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 192px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner_contenedor {
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        height: 352px;
+        padding: 2rem;
+    }
+
+    .banner_contenedor {
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner {
+        padding-left: calc((100% - 1136px)/2);
+        padding-right: calc((100% - 1136px)/2);
+    }
+}
