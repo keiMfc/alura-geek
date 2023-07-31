@@ -40,6 +40,10 @@ input.login_form_input:focus,
     border-bottom: 2px solid var(--text-color);
 }
 
+.input-message-error {
+    display: none;
+}
+
 @media screen and (min-width:764px) {
     .login {
         padding: 2.8rem 2.5rem;

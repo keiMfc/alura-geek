@@ -38,18 +38,27 @@
     <!-------------------- Formulario de Inicio -------------------->
     <section class="login">
         <h3 class="login_titulo">Iniciar Sesión</h3>
-        <form id="login_form" class="login_form" name="login_form">
+        <form id="loginForm" class="login_form" name="login_form">
+            <!-------------------- Email -------------------->
             <label for="email" class="login_form_label">
                 Correo electrónico
             </label>
             <input class="login_form_input" id="email" type="email" name="email"
-                placeholder="Escriba su correo electrónico" />
+                placeholder="Escriba su correo electrónico" required />
+            <span class="input-message-error">Este campo no es válido</span>
+
+            <!-------------------- Contraseña -------------------->
             <label for="contraseña" class="login_form_label">
                 Contraseña
             </label>
-            <input class="login_form_input" id="contraseña" type="password" name="contaseña"
-                placeholder="Escriba su contraseña" />
-            <button type="submit" value="submit-login" class="login_form_button button-fill">Entrar
+            <input class="login_form_input" id="password" type="password" name="contraseña"
+                placeholder="Escriba su contraseña" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-])" maxlength="16"
+                title="Al menos 8 caracteres, máximo 16, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." />
+            <span class="input-message-error">Este campo no es válido</span>
+
+            <!-------------------- Botón -------------------->
+            <button type="button" id="loginButton" class="login_form_button button-fill">Entrar
             </button>
         </form>
     </section>
@@ -91,7 +100,9 @@
     </footer>
 
     <!-------------------- JavaScript -------------------->
-    <script src="../js/validacion-login.js"></script>
+    <script src="../db.json"></script>
+    <script type="module" src="../services/client-services.js"></script>
+    <script type="module" src="../js/login.js"></script>
 </body>
 
 </html>
