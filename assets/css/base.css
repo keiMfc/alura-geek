@@ -85,8 +85,7 @@ input {
 }
 
 .button-fill,
-.button-outline,
-.button-text {
+.button-outline {
     font-size: var(--p-mobile);
     font-weight: 600;
     display: flex;
@@ -107,22 +106,33 @@ input {
     border: none;
 }
 
+.button-fill a {
+    color: var(--blanco);
+}
+
 .button-fill:hover {
     background-color: var(--accent-color-press);
 }
 
-.button-outline {
+.button-outline , .button-outline a{
     background-color: transparent;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
 
-.button-outline:hover {
+.button-outline:hover , .button-outline:hover a{
     background-color: var(--accent-color);
     color: var(--blanco);
 }
 
 .button-text {
+    font-size: var(--p-mobile);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: ease .50s;
     background-color: transparent;
     border: none;
     color: var(--accent-color);
@@ -133,10 +143,18 @@ input {
     justify-content: flex-start;
 }
 
+.button-text a{
+    color: var(--accent-color);
+}
+
 .button-text:active {
     background-color: #0082f360;
     color: var(--accent-color-press);
     border-radius: 40px;
+}
+
+.button-text:active a {
+    color: var(--accent-color-press);
 }
 
 @media screen and (min-width:764px) {

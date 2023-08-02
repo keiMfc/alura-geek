@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-------------------- Estilos del Proyecto -------------------->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -11,15 +12,18 @@
     <link rel="stylesheet" href="assets/css/productos.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/rodapie.css">
+
     <!-------------------- Fuentes del Proyecto -------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
     <title>Alura Geek</title>
 </head>
 
 <body>
+    
     <!-------------------- Header -------------------->
     <header class="header">
         <a href="##">
@@ -44,161 +48,48 @@
         <div class="banner_contenedor">
             <h1 class="banner_titulo">Febrero Promocional</h1>
             <h2 class="banner_subtitulo">Productos seleccionados con 33% de descuento</h2>
-            <button class="banner_verconsolas button-fill" id="btn-consolas">Ver Consolas</button>
+            <button class="banner_verconsolas button-fill" id="btn-consolas"><a href="#consolas">Ver Consolas</a></button>
         </div>
     </section>
 
     <!-------------------- Productos -------------------->
-    <section class="productos">
-        <!-------------------- Star wars -------------------->
+    <section class="productos" data-product>
+
+        <!------------------- Star wars ----------------->
         <div class="productos_contenedor" id="star-wars">
-            <!-------------------- Top de contenedor -------------------->
+            <!-------------------- Top de contenedor ------------------>
             <div class="contenedor_top">
                 <h3 class="contenedor_top_titulo">Star Wars</h3>
-                <button class="contenedor_top_verTodo button-text">Ver todo <img src="assets/img/icono-arrow.svg">
+                <button href class="contenedor_top_verTodo button-text">Ver todo <img src="assets/img/icono-arrow.svg">
                 </button>
             </div>
-            <!-------------------- Cards del contenedor -------------------->
-            <div class="contenedor_card">
-                <div class="contenedor_card_producto" id="0">
-                    <img src="assets/img/taza.png" alt="Taza Casco de Stormtrooper"
-                        class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Taza Stormtrooper</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="1">
-                    <img src="assets/img/lego.png" alt="Lego StarWars" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Legos Star Wars</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="2">
-                    <img src="assets/img/yoda.png" alt="Figura de Yoda" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Yoda</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="3">
-                    <img src="assets/img/soldado-imperial.png" alt="Figura de Stormtrooper"
-                        class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Stormtrooper</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="4">
-                    <img src="assets/img/baby-yoda.png" alt="Figura de Baby Yoda"
-                        class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Baby Yoda</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="5">
-                    <img src="assets/img/kylo-ren.png" alt="Figura de Kylo Ren" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Kylo Ren</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-            </div>
-        </div>
-        <!-------------------- Consolas -------------------->
-        <div class="productos_contenedor" id="consolas">
-            <!-------------------- Top de contenedor -------------------->
-            <div class="contenedor_top">
-                <h3 class="contenedor_top_titulo">Consolas</h3>
-                <button class="contenedor_top_verTodo button-text">Ver todo <img src="assets/img/icono-arrow.svg">
-                </button>
-            </div>
-            <!-------------------- Cards del contenedor -------------------->
-            <div class="contenedor_card">
-                <div class="contenedor_card_producto" id="6">
-                    <img src="assets/img/control-xbox-one.png" alt="Control Xbox one"
-                        class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Control Xbox One</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="7">
-                    <img src="assets/img/ps5.png" alt="Playstation 5" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Playstation 5</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="8">
-                    <img src="assets/img/nintendo.png" alt="Nintendo" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Nintendo</h4>
-                    <h5 class="contenedor_card_producto_precio">$60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="9">
-                    <img src="assets/img/ds.png" alt="Nintendo DS" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Nintendo DS</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="10">
-                    <img src="assets/img/xbox.png" alt="Xbox" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Xbox</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="11">
-                    <img src="assets/img/Gameboy.png" alt="Game Boy" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Game Boy</h4>
-                    <h5 class="contenedor_card_producto_precio">$60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-            </div>
-        </div>
+            <!-------------------- Cards ------------------>
+            <div class="contenedor_card" data-star-wars>
 
-        <!-------------------- Diversos -------------------->
-        <div class="productos_contenedor" id="diversos">
-            <!-------------------- Top de contenedor -------------------->
-            <div class="contenedor_top">
-                <h3 class="contenedor_top_titulo">Diversos</h3>
-                <button class="contenedor_top_verTodo button-text">Ver todo <img src="assets/img/icono-arrow.svg">
-                </button>
             </div>
-            <!-------------------- Cards del contenedor -------------------->
-            <div class="contenedor_card">
-                <div class="contenedor_card_producto" id="12">
-                    <img src="assets/img/atari.png" alt="Camisa Atari" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Camisa Atari</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
+            <!-------------------- Consolas ------------------>
+            <div class="productos_contenedor" id="consolas">
+                <!-------------------- Top de contenedor ------------------>
+                <div class="contenedor_top">
+                    <h3 class="contenedor_top_titulo">Consolas</h3>
+                    <button class="contenedor_top_verTodo button-text">Ver todo <img src="assets/img/icono-arrow.svg">
+                    </button>
                 </div>
-                <div class="contenedor_card_producto" id="13">
-                    <img src="assets/img/camisa.png" alt="Camisa SNE" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Camisa SNE</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
+                <!-------------------- Contenedor de cards ------------------>
+                <div class="contenedor_card" data-consolas>
                 </div>
-                <div class="contenedor_card_producto" id="14">
-                    <img src="assets/img/Sonic.png" alt="Figura de Sonic" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Sonic</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="15">
-                    <img src="assets/img/radio.png" alt="Radio" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Equipo VR</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="16">
-                    <img src="assets/img/vr.png" alt="Equipo VR" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Equipo VR</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-                <div class="contenedor_card_producto" id="17">
-                    <img src="assets/img/pikachu.png" alt="Pikachu" class="contenedor_card_producto_imagen">
-                    <h4 class="contenedor_card_producto_descripcion">Pikachu</h4>
-                    <h5 class="contenedor_card_producto_precio">$ 60,00</h5>
-                    <button class="contenedor_card_producto_verProducto button-text">Ver producto</button>
-                </div>
-            </div>
-        </div>
+                <!-------------------- Diversos ----------------->
+                <div class="productos_contenedor" id="diversos">
+                <!-------------------- Top de contenedor ------------------>
+                    <div class="contenedor_top">
+                        <h3 class="contenedor_top_titulo">Diversos</h3>
+                        <button class="contenedor_top_verTodo button-text">Ver todo <img
+                                src="assets/img/icono-arrow.svg">
+                        </button>
+                    </div>
+                <!-------------------- Cards del contenedor ----------------->
+                    <div class="contenedor_card" data-diversos>
+                    </div>
     </section>
     <!-------------------- Footer -------------------->
     <section class="footer">
@@ -237,7 +128,9 @@
     </footer>
 
     <!-------------------- JavaScript -------------------->
-    <script src="js/buttons.js"></script>
+    <script src="controllers/buttons.js"></script>
+    <script type="module" src="controllers/productos-controller.js"></script>
+    <script type="module" src="services/client-services.js"></script>
 </body>
 
 </html>

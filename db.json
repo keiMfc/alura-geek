@@ -4,5 +4,153 @@
             "email": "administrador@alurageek.com",
             "password": "Admin1234"
         }
+    ],
+
+    "producto": [
+        {
+            "id": "0",
+            "categoria": "Star Wars",
+            "nombre": "Taza Stormtrooper",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/taza.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "1",
+            "categoria": "Star Wars",
+            "nombre": "Legos Star Wars",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/lego.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "2",
+            "categoria": "Star Wars",
+            "nombre": "Yoda",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/yoda.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "3",
+            "categoria": "Star Wars",
+            "nombre": "Stormtrooper",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/soldado-imperial.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "4",
+            "categoria": "Star Wars",
+            "nombre": "Baby Yoda",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/baby-yoda.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "5",
+            "categoria": "Star Wars",
+            "nombre": "Kylo Ren",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/kylo-ren.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "6",
+            "categoria": "Consolas",
+            "nombre": "Control Xbox One",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/control-xbox-one.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "7",
+            "categoria": "Consolas",
+            "nombre": "Playstation 5",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/ps5.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "8",
+            "categoria": "Consolas",
+            "nombre": "Nintendo",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/nintendo.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "9",
+            "categoria": "Consolas",
+            "nombre": "Nintendo DS",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/ds.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "10",
+            "categoria": "Consolas",
+            "nombre": "Xbox",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/xbox.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "11",
+            "categoria": "Consolas",
+            "nombre": "Game Boy",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/Gameboy.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "12",
+            "categoria": "Diversos",
+            "nombre": "Camisa Atari",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/atari.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "13",
+            "categoria": "Diversos",
+            "nombre": "Camisa SNE",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/camisa.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "14",
+            "categoria": "Diversos",
+            "nombre": "Sonic",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/Sonic.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "15",
+            "categoria": "Diversos",
+            "nombre": "Radio",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/radio.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "16",
+            "categoria": "Diversos",
+            "nombre": "Equipo VR",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/vr.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        },
+        {
+            "id": "17",
+            "categoria": "Diversos",
+            "nombre": "Pikachu",
+            "precio": "$ 60,00",
+            "imagen": "https://raw.githubusercontent.com/keiMfc/alura-geek/main/assets/img/pikachu.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut sem et tellus facilisis rutrum. Integer convallis mauris eget lectus semper dapibus. Proin accumsan, eros in pulvinar posuere, nisl massa ornare elit, sed euismod dolor neque vel turpis. In dictum ac erat vel condimentum. Phasellus aliquet molestie arcu vel tristique. Nam semper rutrum arcu, ac tempus elit malesuada eget. Nullam luctus diam sed dapibus facilisis. Ut sed nulla sed justo elementum efficitur. Aliquam a varius leo. Quisque ut maximus dolor, at mattis est. Sed at risus dapibus, fringilla dolor sit amet, viverra ipsum. Sed vitae laoreet diam, volutpat ornare massa."
+        }
+        
     ]
 }

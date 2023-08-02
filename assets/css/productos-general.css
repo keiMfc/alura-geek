@@ -25,7 +25,7 @@
     padding-top: 1rem;
 }
 
-.contenedor_card_producto {
+.card {
     width: 9.75rem;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@
         gap: auto;
     }
 
-    .contenedor_card_producto {
+    .card {
         width: 10.25rem;
     }
 
@@ -85,7 +85,7 @@
         display: flex;
     }
 
-    .contenedor_card_producto {
+    .card {
         width: 11rem;
         padding-bottom: 4rem;
     }
