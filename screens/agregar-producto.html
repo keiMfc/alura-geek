@@ -27,7 +27,7 @@
         <!--Barra de busqueda-->
         <div class="search">
             <div class="search_box">
-                <input type="text" class="input-search" placeholder="¿Qué deseas buscar?">
+                <input type="text" class="input-search input" placeholder="¿Qué deseas buscar?">
                 <div class="icon-search">
                     <img src="assets/img/icono-search.svg" alt="Lupa de busqueda">
                 </div>
@@ -44,25 +44,25 @@
                 <span class="drop-title"> <img src="assets/img/icono-img.svg" alt="Icono de imagen">
                     Arraste para agregar una imagen para el producto</span>
                 o
-                <input class="submit-image" type="file" id="images" accept="image/*" required>
+                <input class="submit-image input" type="file" id="images" accept="image/*" required>
             </label>
 
             <label for="categoria" class="add_form_label">
                 Escoge la categoría
             </label>
-            <input class="add_form_input" id="categoria" type="select" name="categoria"
+            <input class="add_form_input input" id="categoria" type="select" name="categoria"
                 placeholder="Selecciona una categoría" />
 
             <label for="product-name" class="add_form_label">
                 Nombre del producto
             </label>
-            <input class="add_form_input" id="product-name" type="text" name="product-name"
+            <input class="add_form_input input" id="product-name" type="text" name="product-name"
                 placeholder="Ingresa nombre del producto" />
 
             <label for="product-price" class="add_form_label">
                 Nombre del producto
             </label>
-            <input class="add_form_input" id="product-price" type="number" name="product-price"
+            <input class="add_form_input input" id="product-price" type="number" name="product-price"
                 placeholder="Ingresa precio del producto" />
 
             <label for="descripcion" class="add_form_label">
@@ -93,7 +93,7 @@
                 <label for="nombre" class="contacto_form_label">
                     Nombre
                 </label>
-                <input class="contacto_form_input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
+                <input class="contacto_form_input input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
                     required maxlength="50" />
                 <label for="mensaje" class="contacto_form_label">
                     Mensaje
@@ -109,6 +109,8 @@
     <footer class="rodapie">
         <p>© 2023, made with ❤ by Keilin Figueredo</p>
     </footer>
+
+    <script src="../controllers/validadores.js"></script>
 </body>
 
 </html>

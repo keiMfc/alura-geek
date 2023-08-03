@@ -27,7 +27,7 @@
         <!--Barra de busqueda-->
         <div class="search">
             <div class="search_box">
-                <input type="text" class="input-search" placeholder="¿Qué deseas buscar?">
+                <input type="text" class="input-search input" placeholder="¿Qué deseas buscar?">
                 <div class="icon-search">
                     <img src="/assets/img/icono-search.svg" alt="Lupa de busqueda">
                 </div>
@@ -38,24 +38,23 @@
     <!-------------------- Formulario de Inicio -------------------->
     <section class="login">
         <h3 class="login_titulo">Iniciar Sesión</h3>
-        <form id="loginForm" class="login_form" name="login_form">
+        <form action="/screens/gestor-productos.html" id="loginForm" class="login_form" name="login_form" >
             <!-------------------- Email -------------------->
             <label for="email" class="login_form_label">
                 Correo electrónico
             </label>
-            <input class="login_form_input" id="email" type="email" name="email"
-                placeholder="Escriba su correo electrónico" required />
-            <span class="input-message-error">Este campo no es válido</span>
+            <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" data-tipo="email" required>
+            <span class="input-container--invalid">  </span>
 
             <!-------------------- Contraseña -------------------->
             <label for="contraseña" class="login_form_label">
                 Contraseña
             </label>
-            <input class="login_form_input" id="password" type="password" name="contraseña"
-                placeholder="Escriba su contraseña" required
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-])" maxlength="16"
-                title="Al menos 8 caracteres, máximo 16, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." />
-            <span class="input-message-error">Este campo no es válido</span>
+            <input class="input" id="password" type="password" name="contraseña "
+                placeholder="Escriba su contraseña" 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+\-])[a-zA-Z0-9]{8,16}$" minlength="8" maxlength="16"
+                title="Al menos 8 caracteres, máximo 16, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales."  data-tipo="password" required/>
+            <span class="input-container--invalid">  </span>
 
             <!-------------------- Botón -------------------->
             <button type="button" id="loginButton" class="login_form_button button-fill">Entrar
@@ -82,7 +81,7 @@
                 <label for="nombre" class="contacto_form_label">
                     Nombre
                 </label>
-                <input class="contacto_form_input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
+                <input class="contacto_form_input input" id="nombre" type="text" name="nombre" placeholder="Tu nombre"
                     required maxlength="50" />
                 <label for="mensaje" class="contacto_form_label">
                     Mensaje
@@ -101,6 +100,7 @@
 
     <!-------------------- JavaScript -------------------->
     <script src="../db.json"></script>
+    <script  src="../controllers/validadores.js" ></script>
     <script type="module" src="../services/client-services.js"></script>
     <script type="module" src="../controllers/login.js"></script>
 </body>

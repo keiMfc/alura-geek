@@ -20,7 +20,7 @@
     font-size: var(--p-mobile);
 }
 
-.login_form_input {
+.input {
     box-sizing: border-box;
     width: 100%;
     padding: 1rem 0.5rem;
@@ -35,14 +35,17 @@
     color: var(--text-color);
 }
 
-input.login_form_input:focus,
-.contacto_form_textarea:focus {
+.input:focus,
+.textarea:focus {
     border-bottom: 2px solid var(--text-color);
 }
-
-.input-message-error {
-    display: none;
-}
+  
+  .input-container--invalid {
+    display: block;
+    color: red;
+    font-size: var(--p-mobile);
+    padding-bottom: 1rem;
+  }
 
 @media screen and (min-width:764px) {
     .login {

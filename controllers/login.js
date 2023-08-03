@@ -1,5 +1,6 @@
 import { clientServices } from "../services/client-services.js";
 
+
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 
@@ -22,3 +23,4 @@ const validarInicioSesion = async () => {
   
   const loginButton = document.getElementById("loginButton");
   loginButton.addEventListener("click", validarInicioSesion);
+

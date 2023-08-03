@@ -32,7 +32,7 @@
         <!--Barra de busqueda-->
         <div class="search">
             <div class="search_box">
-                <input type="text" class="input-search" placeholder="¿Qué deseas buscar?">
+                <input type="text" class="input-search input" placeholder="¿Qué deseas buscar?">
                 <div class="icon-search">
                     <img src="assets/img/icono-search.svg" alt="Lupa de busqueda">
                 </div>
@@ -110,7 +110,7 @@
                 <label for="nombre" class="contacto_form_label">
                     Nombre
                 </label>
-                <input class="contacto_form_input" id="nombre" type="text" name="nombre" placeholder="Su nombre"
+                <input class="contacto_form_input input" id="nombre" type="text" name="nombre" placeholder="Su nombre"
                     required maxlength="50" />
                 <label for="mensaje" class="contacto_form_label">
                     Mensaje
@@ -129,6 +129,7 @@
 
     <!-------------------- JavaScript -------------------->
     <script src="controllers/buttons.js"></script>
+    <script src="controllers/validadores.js"></script>
     <script type="module" src="controllers/productos-controller.js"></script>
     <script type="module" src="services/client-services.js"></script>
 </body>
