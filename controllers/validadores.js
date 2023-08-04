@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll(".input");
+const textarea = document.querySelectorAll(".text-area");
 
 const valid = (e) => {
     const input = e.target;
@@ -10,6 +11,7 @@ const valid = (e) => {
     if (input.validity.valid) {
         ocultarMensajeError(input);
     }
+
 }
 
 function validarEmail(input) {
@@ -25,6 +27,28 @@ function validarEmail(input) {
     }
   }
   
+function validarNombre(input) {
+    const tipoInput = input.dataset.tipo;
+    const valorInput = input.value.trim();
+  
+    if (valorInput === '') {
+      mostrarMensajeError(tipoInput, 'valueMissing');
+    } else {
+      ocultarMensajeError(input);
+    }
+  }
+
+  function validarMensaje(input) {
+    const tipoInput = input.dataset.tipo;
+    const valorInput = input.value.trim();
+  
+    if (valorInput === '') {
+      mostrarMensajeError(tipoInput, 'valueMissing');
+    } else {
+      ocultarMensajeError(input);
+    }
+  }
+
   function validarPassword(input) {
     const tipoInput = input.dataset.tipo;
     const valorInput = input.value;
@@ -37,7 +61,7 @@ function validarEmail(input) {
       ocultarMensajeError(input);
     }
   }
-  
+    
   function mostrarMensajeError(tipoInput, error) {
     const input = document.querySelector(`[data-tipo="${tipoInput}"]`);
     const span = input.nextElementSibling;
@@ -50,8 +74,11 @@ function validarEmail(input) {
     span.style.display = 'none';
   }
   
+ 
   const validadores = {
     email: validarEmail,
+    nombre: validarNombre,
+    mensaje: validarMensaje,
     password: validarPassword,
   };
 
@@ -60,6 +87,12 @@ function validarEmail(input) {
     email: {
       valueMissing: "El campo correo no puede estar vacío",
       typeMismatch: "El correo no es válido",
+    },
+    nombre: {
+      valueMissing: "El campo nombre no puede estar vacío",
+    },
+    mensaje: {
+      valueMissing: "El campo mensaje no puede estar vacío",
     },
     password: {
       valueMissing: "El campo contraseña no puede estar vacío",

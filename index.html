@@ -110,13 +110,16 @@
                 <label for="nombre" class="contacto_form_label">
                     Nombre
                 </label>
-                <input class="contacto_form_input input" id="nombre" type="text" name="nombre" placeholder="Su nombre"
-                    required maxlength="50" />
+                <input class="input" id="nombre" type="text" name="nombre" placeholder="Su nombre" required maxlength="40" data-tipo="nombre"/>
+                <span class="input-container--invalid">  </span>
+
+
                 <label for="mensaje" class="contacto_form_label">
                     Mensaje
                 </label>
-                <textarea class="contacto_form_textarea" rows="6" id="mensaje" name="mensaje"
-                    placeholder="Escribe un mensaje" required maxlength="300"></textarea>
+                <textarea class="textarea input" rows="6" id="mensaje" name="mensaje" placeholder="Escribe un mensaje" required maxlength="120" data-tipo="mensaje" ></textarea>
+                <span class="input-container--invalid">  </span>
+
                 <button type="submit" value="submit" class="contacto_form_button button-fill">Enviar mensaje
                 </button>
             </form>

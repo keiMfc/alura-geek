@@ -50,7 +50,7 @@
     font-size: var(--p-mobile);
 }
 
-.contacto_form_input {
+.input {
     box-sizing: border-box;
     width: 100%;
     padding: 1rem 0.5rem;
@@ -65,7 +65,7 @@
     color: var(--text-color);
 }
 
-.contacto_form_textarea {
+.textarea {
     flex: 1;
     font-family: var(--Jost);
     box-sizing: border-box;
@@ -84,9 +84,17 @@
     color: var(--text-color);
 }
 
-.contacto_form_textarea {
+
+.textarea {
     margin-bottom: 2rem;
 }
+
+.input-container--invalid {
+    display: block;
+    color: red;
+    font-size: var(--p-mobile);
+    padding-bottom: 1rem;
+  }
 
 textarea::-webkit-scrollbar {
     width: 4px;
@@ -96,8 +104,8 @@ textarea::-webkit-scrollbar-thumb {
     background-color: var(--text-color);
 }
 
-input.contacto_form_input:focus,
-.contacto_form_textarea:focus {
+input.input:focus,
+.textarea:focus {
     border-bottom: 2px solid var(--text-color);
 }
 
