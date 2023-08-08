@@ -114,14 +114,23 @@ input {
     background-color: var(--accent-color-press);
 }
 
-.button-outline , .button-outline a{
+.button-outline {
     background-color: transparent;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
 
-.button-outline:hover , .button-outline:hover a{
+.button-outline a{
+    border: none;
+    color: var(--accent-color);
+}
+
+.button-outline:hover {
     background-color: var(--accent-color);
+    color: var(--blanco);
+}
+
+.button-outline:hover a{
     color: var(--blanco);
 }
 

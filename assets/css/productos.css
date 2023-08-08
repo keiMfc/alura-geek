@@ -23,6 +23,11 @@
     padding-top: 1rem;
 }
 
+.contenedor_card_producto img{
+    width: 176px;
+    height: 176px;
+}
+
 .card {
     width: 9.75rem;
     display: flex;
