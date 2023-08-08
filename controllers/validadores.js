@@ -14,6 +14,17 @@ const valid = (e) => {
 
 }
 
+function validarCategoria(input) {
+  const tipoInput = input.dataset.tipo;
+  const valorInput = input.value;
+
+  if (valorInput === '') {
+    mostrarMensajeError(tipoInput, 'valueMissing');
+  } else {
+    ocultarMensajeError(input);
+  }
+}
+
 function validarEmail(input) {
     const tipoInput = input.dataset.tipo;
     const valorInput = input.value.trim();
@@ -38,7 +49,29 @@ function validarNombre(input) {
     }
   }
 
+  function validarNombreProducto(input) {
+    const tipoInput = input.dataset.tipo;
+    const valorInput = input.value.trim();
+  
+    if (valorInput === '') {
+      mostrarMensajeError(tipoInput, 'valueMissing');
+    } else {
+      ocultarMensajeError(input);
+    }
+  }
+
   function validarMensaje(input) {
+    const tipoInput = input.dataset.tipo;
+    const valorInput = input.value.trim();
+  
+    if (valorInput === '') {
+      mostrarMensajeError(tipoInput, 'valueMissing');
+    } else {
+      ocultarMensajeError(input);
+    }
+  }
+
+  function validarDescripcion(input) {
     const tipoInput = input.dataset.tipo;
     const valorInput = input.value.trim();
   
@@ -61,6 +94,17 @@ function validarNombre(input) {
       ocultarMensajeError(input);
     }
   }
+  
+  function validarPrecio(input) {
+    const tipoInput = input.dataset.tipo;
+    const valorInput = input.value;
+  
+    if (valorInput === '') {
+      mostrarMensajeError(tipoInput, 'valueMissing');
+    } else {
+      ocultarMensajeError(input);
+    }
+  }
     
   function mostrarMensajeError(tipoInput, error) {
     const input = document.querySelector(`[data-tipo="${tipoInput}"]`);
@@ -76,20 +120,36 @@ function validarNombre(input) {
   
  
   const validadores = {
+    categoria: validarCategoria,
     email: validarEmail,
+    descripcion: validarDescripcion,
     nombre: validarNombre,
     mensaje: validarMensaje,
     password: validarPassword,
+    precio: validarPrecio,
+    productName: validarNombreProducto,
   };
 
   
   const mensajeError = {
+    categoria:{
+      valueMissing: "Debe escoger una categoría"
+    },
     email: {
       valueMissing: "El campo correo no puede estar vacío",
       typeMismatch: "El correo no es válido",
     },
+    descripcion: {
+      valueMissing: "El campo descripción no puede estar vacío",
+    },
     nombre: {
       valueMissing: "El campo nombre no puede estar vacío",
+    },
+    precio: {
+      valueMissing: "El campo de precio no puede estar vacío",
+    },
+    productName: {
+      valueMissing: "El campo nombre del producto no puede estar vacío",
     },
     mensaje: {
       valueMissing: "El campo mensaje no puede estar vacío",

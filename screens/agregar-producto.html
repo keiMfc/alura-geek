@@ -22,14 +22,14 @@
     <!-------------------- Header -------------------->
     <header class="header">
         <a href="##">
-            <img src="assets/img/logo.svg" alt="Logo de Alura Geek" class="header_logo">
+            <img src="../assets/img/logo.svg" alt="Logo de Alura Geek" class="header_logo">
         </a>
         <!--Barra de busqueda-->
         <div class="search">
             <div class="search_box">
                 <input type="text" class="input-search input" placeholder="¿Qué deseas buscar?">
                 <div class="icon-search">
-                    <img src="assets/img/icono-search.svg" alt="Lupa de busqueda">
+                    <img src="../assets/img/icono-search.svg" alt="Lupa de busqueda">
                 </div>
             </div>
         </div>
@@ -41,35 +41,32 @@
         <form id="add_form" class="add_form" name="add_form">
 
             <label for="images" class="drop-container" id="dropcontainer">
-                <span class="drop-title"> <img src="assets/img/icono-img.svg" alt="Icono de imagen">
-                    Arraste para agregar una imagen para el producto</span>
+                <span class="drop-title"> <img src="../assets/img/icono-img.svg" alt="Icono de imagen">Arraste para agregar una imagen para el producto</span>
                 o
-                <input class="submit-image input" type="file" id="images" accept="image/*" required>
+                <input class="submit-image input" type="file" id="images" accept="image/*" multiple="false" required>
             </label>
 
-            <label for="categoria" class="add_form_label">
-                Escoge la categoría
-            </label>
-            <input class="add_form_input input" id="categoria" type="select" name="categoria"
-                placeholder="Selecciona una categoría" />
+            <label for="categoria">Selecciona una categoría:</label>
+            <select class="input" id="categoria" name="categoria" data-tipo="categoria" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="star_wars">Star wars</option>
+                <option value="consolas">Consolas</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            <span class="input-container--invalid">  </span>
 
-            <label for="product-name" class="add_form_label">
-                Nombre del producto
-            </label>
-            <input class="add_form_input input" id="product-name" type="text" name="product-name"
-                placeholder="Ingresa nombre del producto" />
+            <label for="product-name" class="add_form_label"> Nombre del producto </label>
+            <input class="input" id="product-name" type="text" name="product-name" placeholder="Ingresa nombre del producto" data-tipo="productName" maxlength="20" required/>
+            <span class="input-container--invalid">  </span>
 
-            <label for="product-price" class="add_form_label">
-                Nombre del producto
-            </label>
-            <input class="add_form_input input" id="product-price" type="number" name="product-price"
-                placeholder="Ingresa precio del producto" />
+            <label for="product-price" class="add_form_label"> Precio del producto </label>
+            <input class="input" id="product-price" type="number" name="product-price" placeholder="Ingresa precio del producto" data-tipo="precio" required />
+            <span class="input-container--invalid">  </span>
 
-            <label for="descripcion" class="add_form_label">
-                Descripción del producto
-            </label>
-            <textarea class="add_form_textarea" rows="6" id="mensaje" name="mensaje" placeholder="Describe el producto"
-                required maxlength="300"></textarea>
+            <label for="descripcion" class="add_form_label"> Descripción del producto </label>
+            <textarea class="add_form_textarea input" rows="6" id="mensaje" name="mensaje" placeholder="Describe el producto" required maxlength="150" data-tipo="descripcion" required ></textarea>
+            <span class="input-container--invalid">  </span>
+            
             <button type="submit" value="submit-add" class="add_form_button button-fill">Agregar Producto</button>
         </form>
     </section>
@@ -77,7 +74,7 @@
     <!-------------------- Footer -------------------->
     <section class="footer">
         <div class="izquierda">
-            <img src="assets/img/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
+            <img src="../assets/img/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
             <ul class="izquierda_list">
                 <li class="izquierda_list_links"><a href="##">Quienes somos</a></li>
                 <li class="izquierda_list_links"><a href="##">Política de privacidad</a></li>
