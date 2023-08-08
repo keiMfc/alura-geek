@@ -3,16 +3,10 @@ import { clientServices } from "../services/client-services.js";
 const newProduct = (id, categoria, nombre, precio, imagen) => {
    const card = document.createElement("div");
    const contenido = `<div class="contenedor_card_producto" id="${id}">
-   <div class="contenedor_opciones">
-        <button class="delete__button" href="#" type="button" id="${id}"></button>
-        <button class="edit__button" href="#" type="button" id="${id}"></button>
-   </div>    
-   <img src="${imagen}" alt="${nombre}" class="contenedor_card_producto_imagen">
-       
+       <img src="${imagen}" alt="${nombre}" class="contenedor_card_producto_imagen">
        <h4 class="contenedor_card_producto_descripcion">${nombre}</h4>
        <h5 class="contenedor_card_producto_precio">${precio}</h5>
-       <p class="contenedor_card_producto_digitos">${id}</p>
-       
+       <button class="contenedor_card_producto_verProducto button-text"><a href="../screens/descripcion-producto.html?id=${id}">Ver producto</a></button>
    </div>`;
 
    card.innerHTML = contenido;

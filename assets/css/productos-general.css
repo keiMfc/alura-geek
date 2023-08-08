@@ -39,10 +39,39 @@
     justify-content: flex-end;
 }
 
-.contenedor_opciones img {
-    width: 24px;
+.contenedor_opciones button {
+    height: 32px;
+    width: 32px;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 8px;
+}
+
+.contenedor_opciones button:hover {
+    background-color: rgba(23, 23, 23, 0.737);
+}
+
+
+.delete__button{
+    background-image: url(https://raw.githubusercontent.com/keiMfc/alura-geek/7a0163d787669dbe0af584dac59448c2be4a51a8/assets/img/delete_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+}
+
+.edit__button{
+    background-image: url(https://raw.githubusercontent.com/keiMfc/alura-geek/7a0163d787669dbe0af584dac59448c2be4a51a8/assets/img/edit_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+}
+
+.contenedor_opciones img:hover{
+    filter: drop-shadow(0px 0px 5px var(--accent-color))
 }
 
 .contenedor_card_producto_digitos {
