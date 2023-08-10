@@ -96,15 +96,15 @@
     padding-bottom: 1rem;
   }
 
-textarea::-webkit-scrollbar {
+.textarea::-webkit-scrollbar {
     width: 4px;
 }
 
-textarea::-webkit-scrollbar-thumb {
+.textarea::-webkit-scrollbar-thumb {
     background-color: var(--text-color);
 }
 
-input.input:focus,
+.input:focus,
 .textarea:focus {
     border-bottom: 2px solid var(--text-color);
 }

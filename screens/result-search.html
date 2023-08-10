@@ -5,24 +5,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-------------------- Estilos del Proyecto -------------------->
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/productos-general.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/rodapie.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/rodapie.css">
+    <link rel="stylesheet" href="/assets/css/productos.css">
+
     <!-------------------- Fuentes del Proyecto -------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>Todos los productos - Alura Geek</title>
+    <title>Resultado de la busqueda - Alura Geek</title>
 </head>
 
 <body>
     <!-------------------- Header -------------------->
     <header class="header">
         <a href="../index.html">
-            <img src="../assets/img/logo.svg" alt="Logo de Alura Geek" class="header_logo">
+            <img src="/assets/img/logo.svg" alt="Logo de Alura Geek" class="header_logo">
         </a>
         <!--Barra de busqueda-->
         <div class="search">
@@ -33,25 +35,15 @@
         </div>
     </header>
 
-    <!-------------------- Productos General -------------------->
-    <section class="productos-general">
-        <!-------------------- Todos los productos -------------------->
-        <div class="productos_contenedor">
-            <!-------------------- Top de contenedor -------------------->
-            <div class="contenedor_top ">
-                <h3 class="contenedor_top_titulo">Todos los productos</h3>
-                <button class="contenedor_top_Agregar-producto button-fill"> <a href="agregar-producto.html">Agregar producto</a>
-                </button>
-            </div>
-            <!-------------------- Cards del contenedor -------------------->
-            <div class="contenedor_card" data-all-products>
-            </div>
-        </div>
+    <!-------------------- Resultados -------------------->
+    <section class="productos-resultados" data-result>
+
+
     </section>
     <!-------------------- Footer -------------------->
     <section class="footer">
         <div class="izquierda">
-            <img src="../assets/img/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
+            <img src="/assets/img/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
             <ul class="izquierda_list">
                 <li class="izquierda_list_links"><a href="##">Quienes somos</a></li>
                 <li class="izquierda_list_links"><a href="##">Política de privacidad</a></li>
@@ -86,9 +78,11 @@
     <footer class="rodapie">
         <p>© 2023, made with ❤ by Keilin Figueredo</p>
     </footer>
-    <script src="../controllers/validadores.js"></script>
-    <script type="module" src="../controllers/productos-controller.js"></script>
+
+    <!-------------------- JavaScript -------------------->
+    <script src="../controllers/search.js"></script>
     <script type="module" src="../services/client-services.js"></script>
+    <script type="module" src="../controllers/search-product.js"></script>
 </body>
 
 </html>

@@ -26,17 +26,15 @@
     
     <!-------------------- Header -------------------->
     <header class="header">
-        <a href="##">
+        <a href="/index.html">
             <img src="assets/img/logo.svg" alt="Logo de Alura Geek" class="header_logo">
         </a>
         <!--Barra de busqueda-->
         <div class="search">
-            <div class="search_box">
-                <input type="text" class="input-search input" placeholder="¿Qué deseas buscar?">
-                <div class="icon-search">
-                    <img src="assets/img/icono-search.svg" alt="Lupa de busqueda">
-                </div>
-            </div>
+            <form class="search_box">
+                <input type="text" class="input-search" placeholder="¿Qué deseas buscar?" data-search>
+                <button class="btn-search" id="search__action"></button>
+            </form>
         </div>
 
         <!-------------------- Boton login -------------------->
@@ -53,7 +51,7 @@
     </section>
 
     <!-------------------- Productos -------------------->
-    <section class="productos" data-product>
+    <section class="productos">
 
         <!------------------- Star wars ----------------->
         <div class="productos_contenedor" id="star-wars">
@@ -131,6 +129,7 @@
     </footer>
 
     <!-------------------- JavaScript -------------------->
+    <script src="../controllers/search.js"></script>
     <script src="controllers/buttons.js"></script>
     <script src="controllers/validadores.js"></script>
     <script type="module" src="controllers/index-product.js"></script>

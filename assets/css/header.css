@@ -19,12 +19,14 @@
     display: none;
 }
 
-.icon-search {
-    vertical-align: center;
-}
-
-.icon-search img {
-    filter: invert(1);
+.btn-search{
+    border: none;
+    background-image: url(https://raw.githubusercontent.com/keiMfc/alura-geek/a7ab0be7232a10ca48b6492bf83af15313f59873/assets/img/Icone-searchv2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
 }
 
 
@@ -56,20 +58,10 @@
         outline: none;
         resize: none;
         background: transparent;
-        font-family: var(--Jost);
-        font-size: var(--p-mobile);
+        font-size: var(--p-desktop);
         color: var(--text-color);
     }
 
-    .icon-search {
-        display: flex;
-        vertical-align: center;
-    }
-
-    .icon-search img {
-        filter: none;
-
-    }
 }
 
 @media screen and (min-width: 1440px) {
