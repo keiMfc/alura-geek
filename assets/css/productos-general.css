@@ -61,14 +61,14 @@
 }
 
 
-.delete__button{
+.btn-delete{
     background-image: url(https://raw.githubusercontent.com/keiMfc/alura-geek/7a0163d787669dbe0af584dac59448c2be4a51a8/assets/img/delete_black_24dp.svg);
     background-repeat: no-repeat;
     background-size: 24px;
     background-position: center;
 }
 
-.edit__button{
+.btn-edit{
     background-image: url(https://raw.githubusercontent.com/keiMfc/alura-geek/7a0163d787669dbe0af584dac59448c2be4a51a8/assets/img/edit_black_24dp.svg);
     background-repeat: no-repeat;
     background-size: 24px;

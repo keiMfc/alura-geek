@@ -4,8 +4,8 @@ const newProduct = (id, categoria, nombre, precio, imagen) => {
    const card = document.createElement("div");
    const contenido = `<div class="contenedor_card_producto" id="${id}">
    <div class="contenedor_opciones">
-        <button class="delete__button" href="#" type="button" id="${id}"></button>
-        <button class="edit__button" href="#" type="button" id="${id}"></button>
+        <button class="btn-delete" href="#" type="button" id="${id}" data-delete></button>
+        <button class="btn-edit" href="#" type="button" id="${id}" data-edit></button>
    </div>    
    <img src="${imagen}" alt="${nombre}" class="contenedor_card_producto_imagen">
        
@@ -18,6 +18,23 @@ const newProduct = (id, categoria, nombre, precio, imagen) => {
    card.innerHTML = contenido;
    card.classList.add("card");
    card.dataset.id = id;
+
+    const btnDelete = card.querySelector(".btn-delete");
+    btnDelete.addEventListener("click", () => {
+        const id = btnDelete.id;
+        const confirmDelete = window.confirm("¿Estás seguro de que deseas eliminar este producto?");
+        if (confirmDelete) {
+            console.log("Eliminando producto...");
+            try {
+                const respuesta = clientServices.deleteProduct(id);
+                console.log("Respuesta del servidor:", respuesta);
+                location.reload();
+            } catch (error) {
+                console.log("Ocurrió un error", error);
+            }
+        }
+    })
+
 
    return card;
 };

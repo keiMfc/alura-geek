@@ -41,11 +41,12 @@ const updateProduct = async (id, product) => {
 //Borrar Producto
 
 const deleteProduct = async (id) => {
-  const response = await fetch(`http://localhost:3000/producto${id}`, {
-    method: "DELETE",
-  });
-  const data = await response.json();
-  return data;
+    console.log("Enviando solicitud DELETE...");
+    const response = await fetch(`http://localhost:3000/producto/${id}`, {
+        method: "DELETE",
+    });
+    const data = await response.json();
+    return data;
 };
 
 export const clientServices = {
