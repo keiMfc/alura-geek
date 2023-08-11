@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------- Estilos del Proyecto -------------------->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/add.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/rodapie.css">
+    <!-------------------- Fuentes del Proyecto -------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Editar Producto - Alura Geek</title>
+</head>
+
+<body>
+    <!-------------------- Header -------------------->
+    <header class="header">
+        <a href="../index.html">
+            <img src="../assets/img/logo.svg" alt="Logo de Alura Geek" class="header_logo">
+        </a>
+    <!--Barra de busqueda-->
+    <div class="search">
+        <form class="search_box">
+            <input type="text" class="input-search" placeholder="¿Qué deseas buscar?" data-search>
+            <button class="btn-search" id="search__action"></button>
+        </form>
+    </div>
+
+    <!-------------------- Boton Menú Administrador -------------------->
+    <button class="header_menu button-outline" id="btn-menu"><a href="./gestor-productos.html">Menú Administrador</a></button>
+
+    </header>
+
+    <!-------------------- Formulario de Ingreso de Producto -------------------->
+    <section class="add">
+        <h3 class="add_titulo">Editar producto</h3>
+        <form id="add_form" class="add_form" name="add_form" data-form>
+
+            <label for="product-imagen" class="add_form_label">Imagen del producto</label>
+            <input name="imagen" id="imagen" class="input" type="url" placeholder="Ingresa la url de la imagen" required data-img>
+            <span class="input-container--invalid">  </span>
+            
+            <select class="input" id="categoria" name="categoria" data-tipo="categoria" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="star_wars">Star wars</option>
+                <option value="consolas">Consolas</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            <span class="input-container--invalid">  </span>
+
+            <label for="product-name" class="add_form_label"> Nombre del producto </label>
+            <input class="input" id="product-name" type="text" name="product-name" placeholder="Ingresa nombre del producto" data-tipo="productName" maxlength="20" required/>
+            <span class="input-container--invalid">  </span>
+
+            <label for="product-price" class="add_form_label"> Precio del producto </label>
+            <input class="input" id="product-price" name="product-price" placeholder="Ingresa precio del producto" data-tipo="precio" required />
+            <span class="input-container--invalid">  </span>
+
+            <label for="descripcion" class="add_form_label"> Descripción del producto </label>
+            <textarea class="add_form_textarea input" rows="6" id="mensaje" name="mensaje" placeholder="Describe el producto" required maxlength="150" data-tipo="descripcion" required ></textarea>
+            <span class="input-container--invalid">  </span>
+            
+            <button type="submit" value="submit-update" class="add_form_button button-fill">Guardar cambios</button>
+        </form>
+    </section>
+
+    <!-------------------- Footer -------------------->
+    <section class="footer">
+        <div class="izquierda">
+            <img src="../assets/img/logo.svg" alt="Logo de Alura Geek" class="izquierda_logo">
+            <ul class="izquierda_list">
+                <li class="izquierda_list_links"><a href="##">Quienes somos</a></li>
+                <li class="izquierda_list_links"><a href="##">Política de privacidad</a></li>
+                <li class="izquierda_list_links"><a href="##">Programa de fidelidad</a></li>
+                <li class="izquierda_list_links"><a href="##">Nuestras tiendas</a></li>
+                <li class="izquierda_list_links"><a href="##">Quiero ser franquiciado</a></li>
+                <li class="izquierda_list_links"><a href="##">Anúncie aquí</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h3 class="contacto_titulo">Hable con nosotros</h3>
+            <form id="form" class="contacto_form" name="form">
+                <label for="nombre" class="contacto_form_label">
+                    Nombre
+                </label>
+                <input class="input" id="nombre" type="text" name="nombre" placeholder="Su nombre" required maxlength="40" data-tipo="nombre"/>
+                <span class="input-container--invalid">  </span>
+
+
+                <label for="mensaje" class="contacto_form_label">
+                    Mensaje
+                </label>
+                <textarea class="textarea input" rows="6" id="mensaje" name="mensaje" placeholder="Escribe un mensaje" required maxlength="120" data-tipo="mensaje" ></textarea>
+                <span class="input-container--invalid">  </span>
+
+                <button type="submit" value="submit" class="contacto_form_button button-fill">Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-------------------- Rodapie -------------------->
+    <footer class="rodapie">
+        <p>© 2023, made with ❤ by Keilin Figueredo</p>
+    </footer>
+
+    <script src="../controllers/validadores.js"></script>
+    <script type="module" src="../controllers/edit-product.js"></script>
+    <script type="module" src="../services/client-services.js"></script>
+</body>
+
+</html>

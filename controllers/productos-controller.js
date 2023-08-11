@@ -33,10 +33,15 @@ const newProduct = (id, categoria, nombre, precio, imagen) => {
                 console.log("Ocurrió un error", error);
             }
         }
-    })
+    });
 
+    const btnEdit = card.querySelector(".btn-edit");
+    btnEdit.addEventListener("click", () => {
+        const id = btnEdit.id;
+        window.location.href= `../screens/editar-producto.html?id=${id}`;
+    });
 
-   return card;
+    return card;
 };
 
 const productStarWars = document.querySelector("[data-star-wars]");

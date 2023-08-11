@@ -10,6 +10,24 @@ const listProducts = () => {
   .catch(error => console.log(error))
 };
 
+//Leer Producto por id 
+
+const productoId = async (id) => {
+  try {
+      const response = await fetch(`http://localhost:3000/producto/${id}`);
+      if (!response.ok) {
+          throw new Error("No se pudo obtener el producto");
+      }
+      const product = await response.json();
+      return product;
+  } catch (error) {
+      console.error(error);
+      throw error;
+  }
+};
+
+export { listProducts };
+
 //Crear Producto
 
 const createProduct = async (product) => {
@@ -27,7 +45,7 @@ const createProduct = async (product) => {
 //Actualizar Producto
 
 const updateProduct = async (id, product) => {
-  const response = await fetch(`http://localhost:3000/producto${id}`, {
+  const response = await fetch(`http://localhost:3000/producto/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -52,6 +70,7 @@ const deleteProduct = async (id) => {
 export const clientServices = {
   listAdmins,
   listProducts,
+  productoId,
   createProduct,
   updateProduct,
   deleteProduct,
